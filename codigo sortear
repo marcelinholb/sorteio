@@ -1,0 +1,17 @@
+<button class="sortear-presente">Clique aqui para sortear um presente</button>
+.sortear-presente {
+  background-color: #4CAF50; /* cor de fundo do botão */
+  color: white; /* cor do texto do botão */
+  padding: 10px 20px; /* espaço interno do botão */
+  border: none; /* remove a borda do botão */
+  border-radius: 5px; /* arredonda as bordas do botão */
+  cursor: pointer; /* muda o cursor do mouse quando passa sobre o botão */
+}
+<script>
+var presentes = ["presente1", "presente2", "presente3", "presente4", "presente5"];
+
+document.querySelector(".sortear-presente").addEventListener("click", function() {
+  var indice = Math.floor(Math.random() * presentes.length);
+  alert("Você ganhou um " + presentes[indice] + "!");
+});
+</script>
